@@ -6,29 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eksamens</title>
     <link rel="Stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script defer src="main.js"></script>
 </head>
 <body>
     <div class="header"></div>
-            <div class="container"><h1><b>Color<i>swipe</i></b></h1></div>  
-            <div class="menu">
+            <h1 class="container"><b>Color<i>swipe</i></b></h1>
+        <div class="menu">
         <ul>
-            <li><a>Par mums</a>
-            <li><a>Preces</a>
-                <ul>
-                    <li><a>Somas</a></li>
-                    <li><a>Zeķes</a></li>
-                    <li><a>T-krekli</a></li>
-                </ul>
-            </li>
-            <li><a>Kā mūs atrast</a>
-          
-        <button id="mainBtn" class="id-list">
-            <div class="id-content">
-                <a href="#login">Log In</a> |  <a href="#signup">Sign up</a>
-            </div>
-        </button>
+            <li class="lang" key="about"><a  href="#description">About us</a></li>
+        
+                    
+            <li class="lang" key="bags"><a hrt>Bags</a></li>
+            <li class="lang" key="socks"><a>Socks</a></li>
+            <li class="lang" key="shirts"><a>Shirts</a></li>
+                
+        
+            <li class="lang" key="findus"><a>How to find us</a></li>
+            <button id="en" class="translate">English</button>
+            <button id="lv" class="translate">Latviešu</button>
+
+        </ul>
+        </div>
+                
+        <nav>
+
+            <button class="login" onclick="login()">Pieslēgties</button>
         <div class="enter-data">
             <img src="close-button-png-30230.png" alt="Close" class="close">
             <div id="error"></div>
@@ -72,24 +76,23 @@
     </nav>
     <div class="banner">
         <div class="app-text">
-            <h1><i>Par mūsu veikalu</i></h1>
-            <p>Mēs esam mazs veikals, kura veidotāji ir ļoti entuziastiski cilvēki.
- Mēs strādājam katru dienu, lai sniegtu mūsu klientiem labāko servisu. Savu biznesu sākām 2016. gada pavasarī
- ar domu fokusēies uz interesantiem un krāsainiem priekšmetiem un apģērbiem. Šodien pārdodam interesantas somas, 
- zeķes un t-kreklus. 
+            <h1 class="lang" key="description" id="description"><i>About our store</i></h1>
+            <p class="lang" key="text">We are a small shop, the creators of which are very enthusiastic people. We work every day to provide our customers with the best service. We started our business in the spring of 2016 with the idea to focus on interesting and colorful objects and clothes. 
+                Today we sell interesting bags, socks and t-shirts. " 
             </p> 
+        
+           
 
             </div>
     </div>
                 
     <div class="social-menu">
         <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
         </ul>
     </div>
-   <script src="js/jquery-3.4.1.js"></script>
 </body>
 </html>

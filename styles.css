@@ -1,0 +1,181 @@
+body{
+    background: linen;
+    font-family: serif;
+    color: darkslategray;
+}
+
+.container{
+    width: 100%;
+    background-color: white;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    border: 3px groove;
+    font-size: 350%;
+}
+.menu ul{
+    margin: 0;
+    padding-top: 0px;
+    list-style: none;
+}
+.menu ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    top: 155px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    background-color: lightgoldenrodyellow;
+    opacity: .8;
+    margin-right: 2px;
+}
+.menu ul li a{
+    text-decoration: none;
+    display: block;
+}
+.menu ul li a:hover {
+    background-color: orange;
+}
+.menu ul li ul li{
+    display: none;
+}
+.menu ul li:hover ul li{
+    display: block;
+}
+.banner {
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 5%;
+    font-size: 20px;
+    position: absolute;
+}
+.app-text{
+    width: 50%;
+    float: left;
+}
+
+.id-list{
+    width: 150px;
+    height: 45px;
+    float: left;
+    background-color: rgb(248, 211, 143);
+    color: darkslategray;
+    border-radius: 10px;
+}
+.id-list>.id-content{
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+    float: right;
+    color: darkslategray;
+    line-height: 40px;
+    right: 50px;
+}
+.id-list>.id-content a{
+    color: darkslategray;
+    text-decoration: none;
+}
+.enter-data{
+    float: right;
+    width: 300px;
+    height: auto;
+    background-color: rgb(248, 211, 143);
+    border-radius: 2px;
+    border-bottom: 5px solid gray;
+    margin-top: 10px;
+    display: none;
+}
+.close{
+    position: absolute;
+    top: 120px;
+    right: 15px;
+    background: #fff;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.login_form{
+    width: 250px;
+    margin: 25px auto;
+    font-size: 20px;
+    color: gray;
+}
+.register_form{
+    width: 250px;
+    margin: 25px auto;
+    font-size: 20px;
+    color: gray;
+    display: none;
+}
+
+input[type=text],
+input[type=password]{
+    width: 240px;
+    height: 30px;
+    border: 0px;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+input[type=submit]{
+    width: 95%;
+    height: 35px;
+    background-color: grey;
+    color: honeydew;
+    outline: none;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.social-menu ul{
+    position: absolute;
+    top: 90%;
+    right: 10%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+
+}
+.social-menu ul li .fa{
+    font-size: 20px;
+    line-height: 40px;
+    transition: .6s;
+    color:darkslategray;
+}
+.social-menu ul li .fa:hover{
+    color: #fff;
+}
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(206, 202, 202);
+    text-align: center;
+    transition: .6s;
+}
+.social-menu ul li a:hover{
+    transform: translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgb(59,89,153);
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: rgb(85,172,238);
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color:rgb(228,64,95);
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color:rgb(0,119,181);
+}
